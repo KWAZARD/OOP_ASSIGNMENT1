@@ -18,6 +18,8 @@ private:
 public:
 	Board(int userRows, int userCols) : rows(userRows), cols(userCols), board(rows, std::vector<std::string>(cols, " ")) { }
 
+
+	// Method that draws board
 	void drawBoard() {
 
 		std::cout << "   ";

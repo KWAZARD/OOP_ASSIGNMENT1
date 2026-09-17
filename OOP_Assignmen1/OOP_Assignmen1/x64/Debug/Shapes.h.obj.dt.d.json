@@ -82,7 +82,8 @@
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\tuple",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\xpolymorphic_allocator.h",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\cctype",
-            "d:\\windows kits\\10\\include\\10.0.28000.0\\ucrt\\ctype.h"
+            "d:\\windows kits\\10\\include\\10.0.28000.0\\ucrt\\ctype.h",
+            "d:\\programmingprojects\\oop_principles_assignments\\assignment1\\oop_assignmen1\\oop_assignmen1\\point.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

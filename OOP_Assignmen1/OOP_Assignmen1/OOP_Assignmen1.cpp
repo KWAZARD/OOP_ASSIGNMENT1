@@ -23,7 +23,7 @@ std::vector<std::string> splitStr(const std::string& str, const char spliterChar
 
 int main()
 {
-	Board board(20, 50);
+	Board board(25, 80);
 	std::vector<std::vector<std::string>> stringVector;
 	std::string userInput;
 	std::string inputType;
