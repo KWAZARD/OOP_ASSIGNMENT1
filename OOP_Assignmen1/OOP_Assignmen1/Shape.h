@@ -13,10 +13,7 @@ public:
 	{
 
 	}
-	virtual void drawShape()
-	{
-
-	}
+	
 	virtual ~Shape() = default;
 };
 

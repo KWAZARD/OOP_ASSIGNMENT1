@@ -4,7 +4,6 @@
         "Source": "d:\\programmingprojects\\oop_principles_assignments\\assignment1\\oop_assignmen1\\oop_assignmen1\\box.h",
         "ProvidedModule": "",
         "Includes": [
-            "d:\\programmingprojects\\oop_principles_assignments\\assignment1\\oop_assignmen1\\oop_assignmen1\\shape.h",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\string",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\yvals_core.h",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\vcruntime.h",
@@ -84,7 +83,8 @@
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\xpolymorphic_allocator.h",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\cctype",
             "d:\\windows kits\\10\\include\\10.0.28000.0\\ucrt\\ctype.h",
-            "d:\\programmingprojects\\oop_principles_assignments\\assignment1\\oop_assignmen1\\oop_assignmen1\\point.h"
+            "d:\\programmingprojects\\oop_principles_assignments\\assignment1\\oop_assignmen1\\oop_assignmen1\\point.h",
+            "d:\\programmingprojects\\oop_principles_assignments\\assignment1\\oop_assignmen1\\oop_assignmen1\\shape.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []
