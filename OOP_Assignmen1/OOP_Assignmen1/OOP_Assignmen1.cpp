@@ -1,11 +1,14 @@
 // OOP_Assignmen1.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
-#include <iostream>
+
 #include <vector>
 #include <string>
 #include <sstream>
+
 #include "Board.h"
+#include "Shape.h"
+#include "Box.h"
 
 std::vector<std::string> splitStr(const std::string& str, const char spliterChar)
 {
@@ -24,18 +27,35 @@ std::vector<std::string> splitStr(const std::string& str, const char spliterChar
 int main()
 {
 	Board board(25, 80);
-	std::vector<std::vector<std::string>> stringVector;
+	
 	std::string userInput;
 	std::string inputType;
 	while (true)
 	{
+		
 		std::cout << ">> ";
 		std::cin >> inputType;
 		if (inputType == "add")
 		{
+			std::cin >> std::ws;
 			std::getline(std::cin, userInput);
 
-			stringVector.push_back(splitStr(userInput, ' '));
+			std::vector<std::string> stringVector = splitStr(userInput, ' ');
+
+			bool isFilled = false;
+			if (stringVector[0] == "filled")
+			{
+				isFilled = true;
+			}
+
+			if (stringVector[1] == "box")
+			{
+				int x = std::stoi(stringVector[3]);
+				int y = std::stoi(stringVector[4]);
+				int size = std::stoi(stringVector[5]);
+				board.addShapeToBoard(std::make_unique<Box>(isFilled, stringVector[2], Point(x, y), size));
+			}
+
 		}
 		else if (inputType == "draw")
 		{
@@ -57,10 +77,8 @@ int main()
 		{
 			std::cout << "Wrong input!!!";
 		}
+		
 	}
 }
-void addShape()
-{
 
-}
 

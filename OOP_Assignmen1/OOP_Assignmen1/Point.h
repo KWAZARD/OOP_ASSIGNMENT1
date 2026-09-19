@@ -2,9 +2,11 @@
 class Point
 {
 private:
-	int x;
-	int y;
+	int x = 0;
+	int y = 0;
 public:
+	Point() = default;
+	Point(int userX, int userY) : x(userX), y(userY) {}
 	int get_x() const { return x; }
 	int get_y() const { return y; }
 

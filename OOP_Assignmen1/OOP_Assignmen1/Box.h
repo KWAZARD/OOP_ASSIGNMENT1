@@ -9,12 +9,13 @@ private:
 	bool isFilled;
 	std::string color;
 	Point point;
+
+	int side;
 public:
-	Box(bool is_filled, std::string color, Point point);
+	Box(bool is_filled, std::string color, Point point, int userSide);
 	~Box() override;
 
-	Point get_point();
-	void changeColor(std::string newColor);
-	
+	int get_side() { return side; }
+
 	
 };

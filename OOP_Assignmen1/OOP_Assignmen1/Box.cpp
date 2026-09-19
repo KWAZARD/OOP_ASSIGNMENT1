@@ -1,12 +1,12 @@
 #include "Box.h"
 
-Box::Box(bool is_filled, std::string color, Point point) : isFilled(is_filled), color(color), point(point)
+Box::Box(bool is_filled, std::string color, Point point, int userSide) 
+	: Shape(is_filled, color, point), side(userSide)
+{
+
+}
+Box::~Box()
 {
 
 }
 
-Point Box::get_point() { return point; }
-void Box::changeColor(std::string newColor)
-{
-	 color = newColor;
-}
