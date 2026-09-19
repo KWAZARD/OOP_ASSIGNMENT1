@@ -122,7 +122,8 @@
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\ostream",
             "d:\\programmingprojects\\oop_principles_assignments\\assignment1\\oop_assignmen1\\oop_assignmen1\\shape.h",
             "d:\\programmingprojects\\oop_principles_assignments\\assignment1\\oop_assignmen1\\oop_assignmen1\\point.h",
-            "d:\\programmingprojects\\oop_principles_assignments\\assignment1\\oop_assignmen1\\oop_assignmen1\\box.h"
+            "d:\\programmingprojects\\oop_principles_assignments\\assignment1\\oop_assignmen1\\oop_assignmen1\\box.h",
+            "d:\\programmingprojects\\oop_principles_assignments\\assignment1\\oop_assignmen1\\oop_assignmen1\\rectangle.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

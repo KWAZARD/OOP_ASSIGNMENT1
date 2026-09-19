@@ -1,14 +1,10 @@
 #pragma once
 #include <string>
-#include "Point.h"
 #include "Shape.h"
 
 class Box : public Shape
 {
 private:
-	bool isFilled;
-	std::string color;
-	Point point;
 
 	int side;
 public:

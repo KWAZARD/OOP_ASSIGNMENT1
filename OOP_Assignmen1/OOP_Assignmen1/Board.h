@@ -7,12 +7,13 @@
 
 #include "Shape.h"
 #include "Box.h"
+#include "Rectangle.h"
 
 class Board
 {
 private:
-	int rows = 0;
-	int cols = 0;
+	int rows;
+	int cols;
 	std::vector<std::vector<char>> board;
 	std::vector<std::unique_ptr<Shape>> shapes;
 	
@@ -22,6 +23,9 @@ private:
 
 public:
 	Board(int userRows, int userCols) : rows(userRows), cols(userCols), board(rows, std::vector<char>(cols, ' ')) {}
+
+	int get_rows() { return rows; }
+	int get_cols() { return cols; }
 
 	void addShapeToBoard(std::unique_ptr<Shape> newShape)
 	{
@@ -68,7 +72,45 @@ public:
 						board[row][x + size - 1] = colorChar(box);
 					}
 				}
+			}
 
+			else if (Rectangle* box = dynamic_cast<Rectangle*>(shapes[i].get()))
+			{
+				bool isFilled = box->get_isFilled();
+				int height = box->get_height();
+				int width = box->get_width();
+				int x = box->get_point().get_x();
+				int y = box->get_point().get_y();
+				if (isFilled)
+				{
+
+					for (int row = y; row < y + height; row++)
+					{
+						for (int col = x; col < x + width; col++)
+						{
+							board[row][col] = colorChar(box);
+						}
+					}
+				}
+				else
+				{
+					for (int row = y; row < y + height; row++)
+					{
+						board[row][x] = colorChar(box);
+					}
+					for (int col = x; col < x + width; col++)
+					{
+						board[y][col] = colorChar(box);
+					}
+					for (int col = x; col < x + width; col++)
+					{
+						board[y + height - 1][col] = colorChar(box);
+					}
+					for (int row = y; row < y + height; row++)
+					{
+						board[row][x + width - 1] = colorChar(box);
+					}
+				}
 			}
 		}
 	}

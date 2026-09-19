@@ -9,6 +9,7 @@
 #include "Board.h"
 #include "Shape.h"
 #include "Box.h"
+#include "Rectangle.h"
 
 std::vector<std::string> splitStr(const std::string& str, const char spliterChar)
 {
@@ -53,7 +54,22 @@ int main()
 				int x = std::stoi(stringVector[3]);
 				int y = std::stoi(stringVector[4]);
 				int size = std::stoi(stringVector[5]);
-				board.addShapeToBoard(std::make_unique<Box>(isFilled, stringVector[2], Point(x, y), size));
+				if (x <= board.get_cols() && y <= board.get_rows())
+				{
+					board.addShapeToBoard(std::make_unique<Box>(isFilled, stringVector[2], Point(x, y), size));
+				}
+				
+			}
+			else if (stringVector[1] == "rec")
+			{
+				int x = std::stoi(stringVector[3]);
+				int y = std::stoi(stringVector[4]);
+				int height = std::stoi(stringVector[5]);
+				int width = std::stoi(stringVector[6]);
+				if (x <= board.get_cols() && y <= board.get_rows())
+				{
+					board.addShapeToBoard(std::make_unique<Rectangle>(isFilled, stringVector[2], Point(x, y), height, width));
+				}
 			}
 
 		}

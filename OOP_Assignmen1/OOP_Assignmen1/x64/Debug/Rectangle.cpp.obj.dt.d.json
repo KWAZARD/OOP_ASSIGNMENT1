@@ -1,9 +1,10 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "d:\\programmingprojects\\oop_principles_assignments\\assignment1\\oop_assignmen1\\oop_assignmen1\\box.h",
+        "Source": "d:\\programmingprojects\\oop_principles_assignments\\assignment1\\oop_assignmen1\\oop_assignmen1\\rectangle.cpp",
         "ProvidedModule": "",
         "Includes": [
+            "d:\\programmingprojects\\oop_principles_assignments\\assignment1\\oop_assignmen1\\oop_assignmen1\\rectangle.h",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\string",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\yvals_core.h",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\vcruntime.h",
